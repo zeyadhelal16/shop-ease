@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/Apple/Screenshot 2025-08-22 180202.png" type="image/svg+xml">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/all.min.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ShopEase</a>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-btn" title="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="android.html">Android</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" id="userProfileBtn" title="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="action-btn" id="cartBtn" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-header">
+                <h1><i class="fas fa-shopping-cart"></i> Shopping Cart</h1>
+                <a href="index.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping
+                </a>
+            </div>
+            
+            <!-- Cart Items Container -->
+            <div id="cartItemsContainer">
+                <!-- Cart items will be loaded here dynamically -->
+            </div>
+            
+            <!-- Empty Cart Message (hidden by default) -->
+            <div class="empty-cart-container" id="emptyCartMessage" style="display: none;">
+                <div class="empty-cart-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you haven't added any items to your cart yet.</p>
+                <p>Start shopping to discover amazing products!</p>
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Start Shopping
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

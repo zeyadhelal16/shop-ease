@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="icon" href="/Apple/Screenshot 2025-08-22 180202.png" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ShopEase</a>
+                
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphone.html">Apple</a></li>
+                    <li><a href="android.html">Android</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" id="userProfileBtn" title="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="action-btn" id="cartBtn" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+<!-- new -->
+<body class="min-h-screen">
+
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Profile sidebar -->
+            <div class="w-full lg:w-1/3">
+                <div class="profile-card rounded-xl p-6 shadow-sm">
+                    <div class="flex flex-col items-center mb-6">
+                        <div class="relative mb-4">
+                            <img src="#"  class="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-slate-700">
+                            <button class="absolute bottom-0 right-0 bg-white dark:bg-slate-800 p-2 rounded-full shadow-md border border-gray-200 dark:border-slate-700">
+                                <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <h2 class="text-xl font-bold">John Doe</h2>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Premium Member</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-medium">Account Details</h3>
+                            <button class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Edit</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Email</p>
+                                <p class="text-sm font-medium">zeyad.doe@example.com</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Phone</p>
+                                <p class="text-sm font-medium">+20 127 5635 884</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Joined</p>
+                                <p class="text-sm font-medium">15 Jan 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-medium">Shipping Address</h3>
+                            <button class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Edit</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Address</p>
+                                <p class="text-sm font-medium">123 Main St, Apt 4B</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">City</p>
+                                <p class="text-sm font-medium">Egypt</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Country</p>
+                                <p class="text-sm font-medium">Port said</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-300 py-2 px-4 rounded-lg text-sm font-medium hover:bg-red-100 dark:hover:bg-red-900/30 transition">
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="w-full lg:w-2/3 space-y-6">
+                <!-- Stats cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="profile-card rounded-xl p-4 shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Total Orders</p>
+                                <p class="text-2xl font-bold">12</p>
+                            </div>
+                            <div class="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card rounded-xl p-4 shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Pending Orders</p>
+                                <p class="text-2xl font-bold">2</p>
+                            </div>
+                            <div class="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card rounded-xl p-4 shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Loyalty Points</p>
+                                <p class="text-2xl font-bold">1,245</p>
+                            </div>
+                            <div class="bg-purple-100 dark:bg-purple-900/30 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order history -->
+                <div class="profile-card rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-medium text-lg">Recent Orders</h3>
+                        <button class="text-sm text-blue-600 dark:text-blue-400 hover:underline">View All</button>
+                    </div>
+
+                    <div class="order-history overflow-y-auto max-h-96 pr-2">
+                        <div class="divide-y divide-gray-200 dark:divide-slate-700">
+                            <!-- Order 1 -->
+                            <div class="py-4">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                                    <div class="flex items-start gap-4">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62b0b968-5217-4c51-b6cd-d070c303e310.png" alt="Wireless Bluetooth headphones in black color with silver accents displayed on white background" class="w-16 h-16 rounded-md object-cover">
+                                        <div>
+                                            <h4 class="font-medium">Wireless Headphones Pro</h4>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Order #23456</p>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Delivered on 12 Aug 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <p class="font-medium">$199.99</p>
+                                        <div class="flex gap-2 mt-2">
+                                            <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Track</button>
+                                            <button class="text-xs bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full">Reorder</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order 2 -->
+                            <div class="py-4">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                                    <div class="flex items-start gap-4">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00ef4f49-e40f-4ce5-898c-728ad16040db.png" alt="Black leather wallet with multiple card slots and minimalist design displayed with brass details" class="w-16 h-16 rounded-md object-cover">
+                                        <div>
+                                            <h4 class="font-medium">Premium Leather Wallet</h4>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Order #23455</p>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Shipped on 10 Aug 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <p class="font-medium">$79.99</p>
+                                        <div class="flex gap-2 mt-2">
+                                            <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Track</button>
+                                            <button class="text-xs bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full">Reorder</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order 3 -->
+                            <div class="py-4">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                                    <div class="flex items-start gap-4">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0f7bc64-5be5-4106-9709-2e49ac8977ab.png" alt="White ceramic coffee mug with modern geometric pattern and gold trim standing on wooden table" class="w-16 h-16 rounded-md object-cover">
+                                        <div>
+                                            <h4 class="font-medium">Ceramic Coffee Mug Set</h4>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Order #23454</p>
+                                            <p class="text-sm text-gray-500 dark:text-gray-400">Processing</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <p class="font-medium">$45.99</p>
+                                        <div class="flex gap-2 mt-2">
+                                            <button class="text-xs bg-blue-600 text-white px-3 py-1 rounded-full">Details</button>
+                                            <button class="text-xs bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recently viewed -->
+                <div class="profile-card rounded-xl p-6 shadow-sm">
+                    <h3 class="font-medium text-lg mb-6">Recently Viewed</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="group">
+                            <div class="relative overflow-hidden rounded-lg aspect-square mb-2">
+                                <img src="/Apple/iphone/pexels-cmrcn-30353224.jpg" alt="Minimalist analog wristwatch with silver stainless steel case and white dial" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                <button class="absolute bottom-2 right-2 bg-white dark:bg-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
+                                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="text-sm font-medium">Classic Watch</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">$129.99</p>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative overflow-hidden rounded-lg aspect-square mb-2">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fcd8fe2e-3503-4ee2-a848-5b26dc103ebc.png" alt="Wireless charging stand for mobile devices with bamboo wood base and white silicone holder" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                <button class="absolute bottom-2 right-2 bg-white dark:bg-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
+                                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="text-sm font-medium">Wireless Charger</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">$39.99</p>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative overflow-hidden rounded-lg aspect-square mb-2">
+                                <img src="/Apple/mac/pexels-jibarofoto-2148216.jpg" alt="Backpack in dark blue canvas material with leather straps and multiple organizational pockets" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                <button class="absolute bottom-2 right-2 bg-white dark:bg-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
+                                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="text-sm font-medium">Canvas Backpack</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">$89.99</p>
+                        </div>
+
+                        <div class="group">
+                            <div class="relative overflow-hidden rounded-lg aspect-square mb-2">
+                                <img src="/Apple/mac/pexels-jeshoots-238118.jpg" alt="Set of three scented candles in glass jars with different colored wax and minimalist labels" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                <button class="absolute bottom-2 right-2 bg-white dark:bg-slate-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
+                                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="text-sm font-medium">Scented Candles</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">$34.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end new -->
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <script src="main.js"></script>
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var cartBtn = document.getElementById('cartBtn');
+                    if (cartBtn) {
+                        cartBtn.addEventListener('click', function() {
+                            window.location.href = 'cart.html';
+                        });
+                    }
+                    var userProfileBtn = document.getElementById('userProfileBtn');
+                    if (userProfileBtn) {
+                        userProfileBtn.addEventListener('click', function() {
+                            window.location.href = 'profile.html';
+                        });
+                    }
+                });
+
+                                // main.js أو تحت في <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open"); // لو حابب تعمل أنيميشن للأيقونة
+    });
+});
+        </script>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="icon" href="/Apple/Screenshot 2025-08-22 180202.png" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac</title>
+    <link rel="stylesheet" href="iphone.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ShopEase</a>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search iPhones..." class="search-input">
+                    <button class="search-btn" title="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphone.html" class="active">iPhone</a></li>
+                    <li><a href="ipad.html">iPad</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="watch.html">Watch</a></li>
+                </ul>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" id="userProfileBtn" title="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="action-btn" id="cartBtn" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- iPhone Products -->
+    <section class="products">
+        <div class="container">
+            <h2>Mac Models</h2>
+            <div class="product-grid">
+                <!-- iPhone 15 Pro Max -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro Max</h3>
+                        <p class="product-description">The most advanced iPhone with A17 Pro chip</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>256GB Storage</span>
+                        </div>
+                        <div class="product-price">$1,199</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- iPhone 15 Pro -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-description">Pro camera system with titanium design</p>
+                        <div class="product-specs">
+                            <span>6.1" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$999</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- iPhone 15 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15</h3>
+                        <p class="product-description">Amazing camera system with Dynamic Island</p>
+                        <div class="product-specs">
+                            <span>6.1" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$799</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- iPhone 14 Pro Max -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 14 Pro Max</h3>
+                        <p class="product-description">Pro camera system with Always-On display</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>256GB Storage</span>
+                        </div>
+                        <div class="product-price">$1,099</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- iPhone 14 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 14</h3>
+                        <p class="product-description">Advanced dual-camera system</p>
+                        <div class="product-specs">
+                            <span>6.1" Display</span>
+                            <span>12MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$699</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                                <!-- iPhone 15 Plus -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Plus</h3>
+                        <p class="product-description">Bigger screen, bigger possibilities</p>
+                        <div class="product-specs">
+                            <span>6.7" Display</span>
+                            <span>48MP Camera</span>
+                            <span>128GB Storage</span>
+                        </div>
+                        <div class="product-price">$899</div>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

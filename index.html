@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Apple/Screenshot 2025-08-22 180202.png" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/all.min.css">
+    <title>ShopEase</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">ShopEase</a>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-btn" title="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="iphone.html">Apple</a></li>
+                    <li><a href="android.html">Android</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" id="userProfileBtn" title="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="action-btn" id="cartBtn" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to ShopEase</h1>
+            <p>Discover amazing products at unbeatable prices. Shop now and experience the best online shopping experience.</p>
+            <a href="shopnow.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Check out our most popular products</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Apple/iphone/pexels-cmrcn-30353224.jpg" alt="Wireless headphones with noise cancellation" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Iphone 16 Pro max</h3>
+                        <p class="product-price">$200.00</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Apple/iphone/pexels-aksbykas-14979023.jpg" alt="Smart watch with fitness tracking" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Iphone 16</h3>
+                        <p class="product-price">$150.00</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Apple/mac/pexels-format-380633-1029757.jpg" alt="Bluetooth speaker with long battery life" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bluetooth Speaker</h3>
+                        <p class="product-price">$59.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Android/phone-1/pexels-imadclicks-30466740.jpg" alt="Portable power bank with fast charging" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Power Bank</h3>
+                        <p class="product-price">$39.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!--Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Apple/ipad/pexels-cottonbro-7350903.jpg" alt="Wireless headphones with noise cancellation" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <p class="product-price">$99.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!--Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Android/ipad-1/Galaxy-Tab.webp" alt="Wireless headphones with noise cancellation" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <p class="product-price">$99.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!--Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Apple/watch/pexels-alexandr-borecky-128389-393047.jpg" alt="Wireless headphones with noise cancellation" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <p class="product-price">$99.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!--Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/Android/watch-1/Fitbit-Versa-4-Smartwatch-Waterfall-Blue-Platinum-1-600x600.webp" alt="Wireless headphones with noise cancellation" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <p class="product-price">$99.99</p>
+                        <button class="btn-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
