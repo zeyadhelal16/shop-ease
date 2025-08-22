@@ -554,3 +554,11 @@
                 margin-bottom: 20px;
             }
         }
+
+.product-image i {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    margin-left: 70px;
+    margin-top: 30px;
+}
